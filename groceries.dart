@@ -13,7 +13,7 @@ List<String> groceries = [];
 
 
 void add () {
-  print("Please type in the item you want to add to your grocery list or press '2' to go back to then menu!");
+  print("Please type in the item you want to add to your grocery list or press '2' to go back to the menu!");
   print("To add more than 1x of each item lets say for example 5 apples, type it like this '5x apples'.");
   // Ég er með nokkur function sem eru að nota bool = true en vildi hafa eitt while (true). Engin ástæða tbh
   while(true) {
@@ -54,6 +54,7 @@ void remove () {
   print("-----------------------------------------------------------------------------------------------------");
   bool removeFunction = true;
   while(removeFunction) {
+  print("-------------------------------------------------------");
   print("Here is your grocery list!");
   // i stækkar frá 0 upp í hvað sem listinn er langur og hækkar um 1 fyrir hvert item og þá prentast út [1]. fyrsti hlutur  [2]. annar hlutur  etc...
   for(int i = 0; i < groceries.length; i++) {
@@ -112,6 +113,7 @@ void main () {
       break;
     case 3:
       remove();
+      break;
     case 4:
       print("Exiting the app..");
       mainFunction = false;
@@ -142,6 +144,7 @@ void menu2 () {
       break;
     case 3:
       remove();
+      break;
     case 4:
       print("Exiting the app..");
       mainFunction = false;
